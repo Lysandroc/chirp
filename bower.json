@@ -1,0 +1,23 @@
+{
+  "name": "chirp",
+  "authors": [
+    "Lysandro Carioca Braga <lysandroc@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#1.2",
+    "angular-route": "1.2",
+    "bootstrap-css": "3.3.2"
+  }
+}

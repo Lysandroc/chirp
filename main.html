@@ -1,0 +1,16 @@
+<div class="clearfix">
+	<form ng-submit="post()">
+		<input type="text" placeholder="Your name" ng-model="newPost.criadoPor" class="form-control"> <br>
+		<textarea required maxlength="200" rows="3" placeholder="Say something" ng-model="newPost.texto" class="form-control"></textarea>
+		<input type="submit" class="btn submit-btn pull-right" value="send">
+	</form>
+	<div id="post-stream" style="margin-top: 40px;">
+		<h4>Messages</h4>
+		<!-- Deve ser populado o angular aqui -->
+		<div class="post" ng-repeat="post in  posts | orderBy: 'criadoEm':true" ng-class-odd="'odd'" ng-class-even="'even'">
+			<p>{{post.texto}}</p>
+			<small class="pull-right">Posted by {{post.criadoPor}} at {{post.criadoEm | date:"HH:mm:ss 'on' d/MM/yy"}}</small>
+		</div>
+	</div>
+</div>
+	
